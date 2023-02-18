@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagem.png') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body bgcolor="#fff8dc">
+    <center>
+        <font face="Cambria">
+            <h1><font color="#5C4033">CHECKLIST</font></h1>
+            <form>
+                <div class="quadrado" class="button">
+                    <h2 class="criar">CRIAR LISTA</h2>
+                    <button class='btn-enviar' type="submit">ENVIAR</button>
+                </div>
+            </form>
+            <h2 class="consultar"><font color="#5C4033">CONSULTAR LISTAS</font></h2>
+        </font>
+    </center>
+
+    <div class="container" >
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="imagem-card" src="{{ url_for('static', filename='card.jpg') }}" alt="card.jpg">
+                    </div>
+                    <div class="texto">
+                        <h2 class="text-main">Lista 1</h2>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn" name="button"><a href="{{ url_for('tarefas') }}" target="_blank" required>Ver</a></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

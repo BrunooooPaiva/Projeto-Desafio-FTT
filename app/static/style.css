@@ -1,0 +1,104 @@
+.criar {
+    position: relative;
+    height: 40px;
+}
+
+.quadrado {
+    margin: 0 auto;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+.consultar {
+    position: relative;
+    margin-top: 60px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+}
+
+.btn-enviar {
+    position: relative;
+    padding: 5px 30px;
+    left: 5px;
+    font-family: 'Cambria', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+}
+
+content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 330px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #CD853F
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-card{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.text-main{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Cambria', sans-serif;
+}
+
+.btn{
+    padding: 10px 30px;
+    font-family: 'Cambria', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background-color: #8B4513;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}

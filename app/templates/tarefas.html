@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagem.png') }}"/>
+    <style>
+        #digitar {
+            position: relative;
+            right: 10px;
+        }
+
+        button {
+            position: relative;
+            left: 10px;
+        }
+
+        div {
+            position: relative;
+            height: 30px
+        }
+    </style>
+</head>
+<body bgcolor="#fff8dc">
+    <center>
+        <font face="Cambria">
+            <h1><font color="#5C4033">TAREFAS</font></h1>
+            <form action="/criar" method="POST">
+                
+                <div>
+                    <label for="tarefas" id="digitar"><b>Digite a tarefa</b></label>
+                    <input type="text" id="tarefa" name="info" required placeholder="Insira uma tarefa">
+                    <button type="submit">ENVIAR</button>
+                </div>
+                <table class="table table-striped table-responsive table-borderede">
+                    <tbody>
+                        {% for nome in list %}
+                        <tr>
+                            <td>{{ nome.nome }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </form>
+        </font>
+    </center>
+</body>
+</html>
