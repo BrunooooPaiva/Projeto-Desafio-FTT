@@ -31,7 +31,6 @@ def deletar(indice):
     del lista[indice]
     return render_template("tarefas.html", list=lista)
 
-
 @app.route('/<string:nome>')
 def erro(nome):
     variavel = f'A página [{nome}] não existe'

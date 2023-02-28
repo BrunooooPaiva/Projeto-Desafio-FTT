@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagem.png') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         #digitar {
             position: relative;
@@ -30,9 +34,9 @@
             <form action="/criar" method="POST">
                 
                 <div>
-                    <label for="tarefas" id="digitar"><b>Digite a tarefa</b></label>
+                    <label for="tarefas" id="digitar"><b></b></label>
                     <input type="text" id="tarefa" name="info" required placeholder="Insira uma tarefa">
-                    <button type="submit">ENVIAR</button>
+                    <button type="submit" class="btn btn1">ENVIAR</button>
                 </div>
                 <table class="table table-striped table-responsive table-borderede">
                     <tbody>
